@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kent Exterior Cleaning Ltd - Roof Cleaning Enquiry</title>
+  <style>
+    :root{--blue:#005ce8;--blue2:#003b93;--light:#f6faff;--text:#0d2147;--muted:#5d6b86;--line:#d9e2f0;--ok:#0b63e5}
+    *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#eef5ff;color:var(--text)}
+    .wrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:430px 1fr;min-height:100vh;background:white;box-shadow:0 20px 60px rgba(0,41,112,.12)}
+    .side{background:linear-gradient(180deg,#fff 0 13%,#036be8 13%,#00357e 100%);position:relative;overflow:hidden;border-right:1px solid var(--line)}
+    .logoBox{padding:22px 28px;background:#fff;text-align:center}.logo{max-width:100%;height:auto;display:block;margin:auto}
+    .roof{height:210px;background:linear-gradient(rgba(255,255,255,.08),rgba(0,22,76,.75)),repeating-linear-gradient(90deg,#64402d 0 18px,#7c513a 18px 36px);border-top:1px solid #d9e2f0;position:relative}.roof:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 3px,transparent 3px 23px)}
+    .sideContent{padding:34px 38px;color:white}.side h1{font-size:43px;line-height:1.05;margin:0 0 20px}.side h1 span{color:#72bdff}.side p{font-size:17px;line-height:1.5;margin:0 0 28px}.benefit{display:flex;gap:16px;align-items:flex-start;margin:28px 0}.icon{width:52px;height:52px;border:2px solid rgba(255,255,255,.45);border-radius:50%;display:grid;place-items:center;font-size:25px;background:rgba(255,255,255,.08)}.benefit b{display:block;font-size:18px;margin-bottom:6px}.benefit small{font-size:15px;line-height:1.45;color:#e8f4ff}.start{display:block;width:100%;padding:21px;border-radius:10px;background:white;color:var(--blue);font-weight:800;font-size:22px;text-align:center;text-decoration:none;margin:32px 0 34px}.emailBox{background:rgba(0,37,110,.55);border-radius:10px;padding:22px}.emailBox b{font-size:18px}.emailBox p{font-size:15px;margin:10px 0 0;color:#d8edff}.bottom{background:white;color:#0d2147;display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;padding:26px 20px;position:absolute;left:0;right:0;bottom:0;text-align:center}.bottom div{border-right:1px solid var(--line);padding:0 10px}.bottom div:last-child{border:0}.bottom b{display:block;font-size:13px}.bottom small{color:#4d5d78;font-size:12px}
+    .main{padding:24px 28px 28px}.top{text-align:center}.back{float:left;color:var(--blue);font-weight:bold;text-decoration:none}.topLogo{width:380px;max-width:78%;height:auto}.steps{display:flex;align-items:center;justify-content:center;gap:14px;margin:14px 0 18px}.step{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid #cdd7e7;background:white;font-weight:bold}.step.on{background:var(--blue);color:white}.bar{width:120px;height:2px;background:#cfd9ea}.labels{display:flex;justify-content:center;gap:85px;color:#51607b;font-size:13px;margin-top:-9px}.labels b{color:var(--blue)}
+    .card{border:1px solid var(--line);border-radius:12px;padding:20px 22px;background:white;box-shadow:0 8px 22px rgba(0,41,112,.06)}h2{margin:0 0 6px;font-size:22px} .hint{margin:0 0 20px;color:var(--muted)}
+    form{display:grid;gap:15px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field label{display:block;font-weight:bold;margin:0 0 7px;font-size:14px}.req{color:#d12f2f}input,textarea,select{width:100%;border:1px solid #cfd9e8;border-radius:7px;padding:13px;font-size:16px;background:white;color:var(--text)}textarea{min-height:86px;resize:vertical}.map{height:135px;border:1px solid #d3deec;border-radius:8px;background:linear-gradient(30deg,#edf3ef 0 25%,#f8f6ee 25% 50%,#e3f1df 50% 70%,#f5f5f5 70%);position:relative;overflow:hidden}.pin{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);font-size:42px;color:var(--blue)}.photoBtns{display:grid;grid-template-columns:1fr 1fr;gap:12px}.photoBtn{border:1px solid #cdd9ea;border-radius:8px;padding:14px;text-align:center;color:var(--blue);font-weight:bold;background:#fff}.photoBtn input{display:none}.photoBtn small{display:block;color:#687891;font-weight:normal;margin-top:4px}.choice{border:1px solid var(--line);border-radius:8px;padding:14px}.choice b{display:block;color:#003b93;margin-bottom:7px}.choice label{display:block;margin:9px 0;font-weight:normal}.choice input{width:auto;margin-right:8px}.confirm{display:flex;align-items:center;gap:9px}.confirm input{width:auto}.submit{border:0;border-radius:8px;background:linear-gradient(90deg,#0069f5,#004ed2);color:#fff;font-weight:800;font-size:22px;padding:16px;cursor:pointer}.secure{text-align:center;color:var(--muted);font-size:13px}.secure b{color:var(--blue)}
+    .note{background:#edf6ff;border-left:4px solid var(--blue);padding:12px;border-radius:6px;color:#31476b;font-size:14px}.hiddenForm{display:none}
+    @media(max-width:860px){.wrap{display:block}.side{min-height:auto}.roof{height:150px}.sideContent{padding:26px}.side h1{font-size:36px}.bottom{position:static}.main{padding:18px}.grid2,.photoBtns{grid-template-columns:1fr}.labels{gap:25px;font-size:11px}.bar{width:52px}.topLogo{max-width:90%}.side .bottom{margin-top:10px}.benefit{margin:20px 0}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <aside class="side">
+    <div class="logoBox"><img src="logo.png" alt="Kent Exterior Cleaning Ltd" class="logo"></div>
+    <div class="roof"></div>
+    <div class="sideContent">
+      <h1>Roof Cleaning<br><span>Enquiry</span></h1>
+      <p>Professional roof cleaning to remove moss, algae and dirt. Improve the look of your property and help extend the life of your roof.</p>
+      <div class="benefit"><div class="icon">🛡️</div><div><b>Protect Your Roof</b><small>Remove harmful moss and prevent damage to your roof tiles.</small></div></div>
+      <div class="benefit"><div class="icon">🏠</div><div><b>Enhance Kerb Appeal</b><small>A clean roof can dramatically improve the appearance of your property.</small></div></div>
+      <div class="benefit"><div class="icon">✅</div><div><b>Professional Service</b><small>Safe, effective roof cleaning by experienced professionals.</small></div></div>
+      <a class="start" href="#form">📋 Start Enquiry</a>
+      <div class="emailBox"><b>✉️ Your Enquiry</b><p>All enquiries are sent directly to<br>kentexteriorcleaningltd@gmail.com</p></div>
+    </div>
+    <div class="bottom"><div>🔒<b>Your info is secure</b><small>We never share your details</small></div><div>🕒<b>Quick Response</b><small>We aim to respond within 24 hours</small></div><div>✓<b>No Obligation</b><small>Free quotes with no pressure</small></div></div>
+  </aside>
+
+  <main class="main" id="form">
+    <div class="top">
+      <a class="back" href="#">‹ Back</a>
+      <img src="logo.png" alt="Kent Exterior Cleaning Ltd" class="topLogo">
+      <div class="steps"><div class="step">1</div><div class="bar"></div><div class="step on">2</div><div class="bar"></div><div class="step">3</div></div>
+      <div class="labels"><span>Initial Enquiry</span><b>More Information</b><span>Review & Submit</span></div>
+    </div>
+
+    <section class="card">
+      <h2>Please provide a few more details</h2>
+      <p class="hint">This helps us give you an accurate quote.</p>
+      <form name="roof-cleaning-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="roof-cleaning-enquiry">
+        <p class="hiddenForm"><label>Don’t fill this out: <input name="bot-field"></label></p>
+        <div class="grid2">
+          <div class="field"><label>Full Name <span class="req">*</span></label><input name="full_name" placeholder="e.g. John Smith" required></div>
+          <div class="field"><label>Phone Number <span class="req">*</span></label><input name="phone" type="tel" placeholder="07 123 456 789" required></div>
+        </div>
+        <div class="field"><label>Email Address <span class="req">*</span></label><input name="email" type="email" placeholder="you@example.com" required></div>
+        <div class="field"><label>Property Address <span class="req">*</span></label><input name="address" placeholder="123 High Street" required></div>
+        <div class="grid2">
+          <div class="field"><label>City / Town <span class="req">*</span></label><input name="town" placeholder="e.g. Maidstone" required></div>
+          <div class="field"><label>Postcode <span class="req">*</span></label><input name="postcode" placeholder="e.g. ME15 6XX" required></div>
+        </div>
+        <div class="field"><label>Property Location</label><div class="map"><div class="pin">📍</div></div></div>
+        <div class="field"><label>Upload Photos of Your Roof / Property <span class="req">*</span></label><p class="hint" style="margin-bottom:10px">Add as many photos as you can.</p>
+          <div class="photoBtns">
+            <label class="photoBtn">📷 Take Photos<input name="photos" type="file" accept="image/*" capture="environment" multiple><small>Use your camera</small></label>
+            <label class="photoBtn">🖼️ Choose Images<input name="photos" type="file" accept="image/*" multiple><small>From your gallery</small></label>
+          </div>
+        </div>
+        <div class="field"><label>Additional Information</label><textarea name="additional_info" placeholder="e.g. Lots of moss on north side, leaks in living room, access issues, etc."></textarea></div>
+        <div class="grid2">
+          <div class="choice"><b>Preferred Contact Method</b><small>How would you prefer we contact you?</small><label><input type="radio" name="contact_method" value="Phone Call" checked>Phone Call</label><label><input type="radio" name="contact_method" value="Text Message">Text Message</label><label><input type="radio" name="contact_method" value="WhatsApp">WhatsApp</label><label><input type="radio" name="contact_method" value="Email">Email</label></div>
+          <div class="choice"><b>Property Access</b><small>Would you be happy for us to inspect your property if you're not at home?</small><label><input type="radio" name="property_access" value="Yes" checked>Yes</label><label><input type="radio" name="property_access" value="No">No</label></div>
+        </div>
+        <label class="confirm"><input type="checkbox" required checked> I confirm that the information provided is correct.</label>
+        <div class="note">After you deploy this on Netlify, submissions will appear inside your Netlify Forms area. Set email notifications there to send every enquiry to kentexteriorcleaningltd@gmail.com.</div>
+        <button class="submit" type="submit">➤ Submit Enquiry</button>
+        <div class="secure">🔒 Your enquiry will be sent securely to <b>kentexteriorcleaningltd@gmail.com</b></div>
+      </form>
+    </section>
+  </main>
+</div>
+</body>
+</html>
